@@ -1,0 +1,1107 @@
+@media only screen and (min-width: 769px) {
+  footer.main {
+    margin-bottom: 0 !important;
+  }
+
+  footer.main .fbox .copy {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  footer.main .fbox .fmenu,
+  span.top-page {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+}
+
+/* ── Mobile / tablet: hide back-to-top button & keep footer clear of the
+   floating bottom nav pill. The pill and footer share the same background
+   colour (#1f1f1f), so if they overlap the pill becomes invisible.
+   body padding-bottom (set per breakpoint below) pushes the footer far
+   enough above the pill that the lighter page background creates contrast. */
+@media only screen and (max-width: 1130px) {
+  /* Hide the ↑ back-to-top button — mobile users swipe to top; the button
+     also bleeds into the nav pill area at small sizes. */
+  span.top-page {
+    display: none !important;
+  }
+
+  /* Compact the footer on mobile: DooPlay's default footer can have large
+     top/bottom padding (30px+) that creates a big invisible dark block below
+     the page content. Override both directions so the footer is a neat strip
+     with just enough breathing room around the copyright line. */
+  footer.main {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  footer.main .fbox .copy {
+    text-align: center !important;
+  }
+}
+
+body.home .module .content .items {
+  margin-bottom: 0 !important;
+}
+
+body.home .load_modules {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+body.home .material-icons,
+body.home .material-icons.notranslate {
+  display: inline-block;
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+body.home .module .content .hero-slider {
+  height: clamp(320px, 42vw, 620px);
+  overflow: hidden;
+}
+
+body.home .module .content .hero-slider:not(.owl-carousel) .hero-slide {
+  height: clamp(320px, 42vw, 620px);
+}
+
+body.home .module .content .hero-slider:not(.owl-carousel) .hero-slide:not(:first-child) {
+  display: none !important;
+}
+
+body.home .module .content > #featured-titles,
+body.home .module .content > #dt-movies,
+body.home .module .content > #dt-tvshows,
+body.home .module .content > #dt-seasons,
+body.home .module .content > #dt-episodes {
+  height: auto !important;
+  min-height: 0;
+  overflow: visible;
+}
+
+body.home .module .content > #featured-titles:not(.owl-carousel),
+body.home .module .content > #dt-movies:not(.owl-carousel),
+body.home .module .content > #dt-tvshows:not(.owl-carousel),
+body.home .module .content > #dt-seasons:not(.owl-carousel),
+body.home .module .content > #dt-episodes:not(.owl-carousel) {
+  display: grid !important;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 18px;
+  width: 100% !important;
+  height: auto !important;
+  overflow: visible;
+  visibility: hidden;
+}
+
+body.home .module .content > #featured-titles:not(.owl-carousel) > .item,
+body.home .module .content > #dt-movies:not(.owl-carousel) > .item,
+body.home .module .content > #dt-tvshows:not(.owl-carousel) > .item,
+body.home .module .content > #dt-seasons:not(.owl-carousel) > .item,
+body.home .module .content > #dt-episodes:not(.owl-carousel) > .item {
+  float: none !important;
+  width: auto !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.home .module .content > #featured-titles .owl-item > .item,
+body.home .module .content > #dt-movies .owl-item > .item,
+body.home .module .content > #dt-tvshows .owl-item > .item,
+body.home .module .content > #dt-seasons .owl-item > .item,
+body.home .module .content > #dt-episodes .owl-item > .item,
+body.home .module .content .kisskh-country-items .owl-item > .item {
+  display: block;
+  float: none !important;
+  height: auto;
+  min-width: 0;
+}
+
+body.home .module .content > .items .item:not(.hero-slide) .poster,
+body.home .module .content .kisskh-country-items .item .poster {
+  aspect-ratio: 185 / 278;
+  height: auto !important;
+  padding-top: 0 !important;
+}
+
+body.home .module .content > .items .item:not(.hero-slide) .poster img,
+body.home .module .content .kisskh-country-items .item .poster img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  margin-top: 0 !important;
+  object-fit: cover;
+}
+
+body.home .module .content .kisskh-country-module {
+  float: left;
+  width: 100%;
+  height: auto !important;
+  min-height: 0;
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+html.kisskh-js body.home .module .content .kisskh-country-module:not(.kisskh-country-ready) {
+  visibility: hidden;
+}
+
+body.home .module .content .kisskh-country-items:not(.owl-carousel) {
+  display: grid !important;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 18px;
+  width: 100% !important;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+body.home .module .content .kisskh-country-items:not(.owl-carousel) > .item {
+  float: none !important;
+  width: auto !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.home .module .content .kisskh-country-items:not(.owl-carousel) > .item .poster {
+  aspect-ratio: 185 / 278;
+}
+
+@media only screen and (max-width: 1199px) {
+  body.home .module .content > #featured-titles:not(.owl-carousel),
+  body.home .module .content > #dt-movies:not(.owl-carousel),
+  body.home .module .content > #dt-tvshows:not(.owl-carousel),
+  body.home .module .content > #dt-seasons:not(.owl-carousel),
+  body.home .module .content > #dt-episodes:not(.owl-carousel) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  body.home .module .content .kisskh-country-items:not(.owl-carousel) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  body.home .module .content > #featured-titles:not(.owl-carousel),
+  body.home .module .content > #dt-movies:not(.owl-carousel),
+  body.home .module .content > #dt-tvshows:not(.owl-carousel),
+  body.home .module .content > #dt-seasons:not(.owl-carousel),
+  body.home .module .content > #dt-episodes:not(.owl-carousel) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  body.home .module .content .kisskh-country-items:not(.owl-carousel) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body.home .module .content .hero-slider {
+    height: 220px;
+  }
+
+  body.home .module .content .hero-slider:not(.owl-carousel) .hero-slide {
+    height: 220px;
+  }
+
+  body.home .module .content > #featured-titles,
+  body.home .module .content > #dt-movies,
+  body.home .module .content > #dt-tvshows,
+  body.home .module .content > #dt-seasons,
+  body.home .module .content > #dt-episodes {
+    height: auto !important;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  body.home .module .content > #featured-titles:not(.owl-carousel),
+  body.home .module .content > #dt-movies:not(.owl-carousel),
+  body.home .module .content > #dt-tvshows:not(.owl-carousel),
+  body.home .module .content > #dt-seasons:not(.owl-carousel),
+  body.home .module .content > #dt-episodes:not(.owl-carousel) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    height: auto !important;
+  }
+
+  body.home .module .content .kisskh-country-module {
+    height: auto !important;
+    min-height: 0;
+  }
+
+  body.home .module .content .kisskh-country-items:not(.owl-carousel) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+body.home #contenedor,
+body.home .module,
+body.home .module .content,
+body.home .module .content.full_width_layout {
+  border-top: 0 !important;
+}
+
+body.home .module {
+  margin-top: 0 !important;
+}
+
+body.home .module .content.full_width_layout {
+  padding-top: 0 !important;
+}
+
+body.home .module .content > .hero-slider:first-child,
+body.home .module .content > .dooplay-main-slier:first-child {
+  margin-top: 0 !important;
+  border-top: 0 !important;
+}
+
+body.home .module .content > .hero-slider:first-child,
+body.home .module .content > .hero-slider:first-child .owl-wrapper-outer,
+body.home .module .content > .hero-slider:first-child .owl-wrapper,
+body.home .module .content > .hero-slider:first-child .owl-item,
+body.home .module .content > .hero-slider:first-child .hero-slide,
+body.home .module .content > .hero-slider:first-child .hero-slide__link,
+body.home .module .content > .hero-slider:first-child .hero-slide__media {
+  line-height: 0 !important;
+}
+
+@media only screen and (min-width: 769px) {
+  header.main .hbox .fix-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+  }
+
+  header.main .hbox .logo,
+  header.main .hbox .head-main-nav,
+  header.main .hbox .headitems {
+    float: none;
+  }
+
+  header.main .hbox .logo {
+    flex: 0 0 auto;
+    padding-right: 20px;
+  }
+
+  header.main .hbox .head-main-nav {
+    flex: 1 1 auto;
+    margin-left: auto;
+    min-width: 0;
+  }
+
+  .head-main-nav ul.main-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .head-main-nav ul.main-header li a {
+    padding: 8px 12px;
+  }
+
+  header.main .hbox .headitems {
+    flex: 0 0 auto;
+    margin-left: 12px;
+  }
+}
+
+header.main .hbox .logo {
+  background: transparent !important;
+}
+
+header.responsive .logo {
+  padding: 14px 0 !important;
+}
+
+header.responsive .user.responsive-user {
+  display: none;
+}
+
+.menuresp .menu ul.resp li {
+  border-bottom: 0 !important;
+}
+
+header.responsive .nav a.aresp::before,
+header.responsive .search a.aresp::before {
+  content: none !important;
+  display: none !important;
+}
+
+header.responsive .nav a.aresp .material-icons,
+header.responsive .search a.aresp .material-icons,
+header.responsive .user.responsive-user .account-resp .material-icons {
+  font-family: "Material Icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  direction: ltr !important;
+  -webkit-font-feature-settings: "liga" !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+header.responsive a.aresp {
+  padding: 12px !important;
+}
+
+header.responsive .user.responsive-user .account-resp::before {
+  content: none !important;
+}
+
+header.responsive .user.responsive-user .account-resp .material-icons {
+  font-size: 28px !important;
+  line-height: 1;
+}
+
+.kisskh-menu-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.kisskh-menu-icon .material-icons {
+  width: 24px;
+  min-width: 24px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.kisskh-menu-label {
+  min-width: 0;
+}
+
+.head-main-nav ul.main-header li a,
+.menuresp .menu ul.resp li a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1130px) {
+  .head-main-nav ul.main-header li a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  header.main {
+    display: none;
+  }
+
+  .fixheadresp {
+    display: block;
+    /* Stick the responsive header to the top so it stays visible on scroll.
+       Without position:fixed the original theme leaves it in normal flow,
+       which combines with #contenedor margin-top to create a double gap. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 104;          /* same stacking level as the desktop header.main */
+    overflow: visible;     /* allow .search_responsive dropdown to overflow below */
+  }
+
+  header.responsive,
+  .search_responsive {
+    display: block;
+  }
+
+  /* Search dropdown — positioned absolutely so it drops below the fixed
+     .fixheadresp bar without expanding its height. */
+  .search_responsive {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 103;
+  }
+
+  header.responsive {
+    display: flex !important;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 58px;
+    padding: 0 14px;
+    background: #1f1f1f !important;
+    box-sizing: border-box;
+  }
+
+  header.responsive .nav {
+    display: none !important;
+  }
+
+  header.responsive .nav,
+  header.responsive .search,
+  header.responsive .user.responsive-user,
+  header.responsive .responsive-actions,
+  header.responsive .logo {
+    float: none !important;
+    height: auto !important;
+  }
+
+  header.responsive .nav {
+    order: 1;
+    flex: 0 0 34px;
+  }
+
+  header.responsive .logo {
+    order: 1;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    padding: 0 12px 0 0 !important;
+    text-align: left;
+  }
+
+  header.responsive .logo a {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  header.responsive .logo img,
+  header.responsive .logo svg {
+    width: auto;
+    max-width: 112px;
+    max-height: 32px;
+  }
+
+  header.responsive .responsive-actions {
+    order: 2;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  header.responsive .search {
+    flex: 0 0 auto;
+  }
+
+  .fixheadresp header.responsive .responsive-actions {
+    position: static !important;
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+  }
+
+  .fixheadresp header.responsive .responsive-actions .search,
+  .fixheadresp header.responsive .responsive-actions .user.responsive-user {
+    position: static !important;
+    float: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+
+  .fixheadresp header.responsive .responsive-actions .search a.search-resp,
+  .fixheadresp header.responsive .responsive-actions .user.responsive-user a.account-resp {
+    position: static !important;
+    float: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+
+  .fixheadresp header.responsive .responsive-actions .search a.search-resp {
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  header.responsive .user.responsive-user {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  header.responsive a.aresp {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0 !important;
+    color: #fff;
+  }
+
+  header.responsive .user.responsive-user .account-resp {
+    width: 50px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  header.responsive .user.responsive-user .account-resp:hover,
+  header.responsive .user.responsive-user .account-resp:focus-visible {
+    color: var(--kisskh-theme-accent, #408bea);
+    border-color: color-mix(in srgb, var(--kisskh-theme-accent, #408bea) 52%, rgba(255, 255, 255, 0.18));
+  }
+
+  #form-search-resp {
+    display: none;
+  }
+
+  #form-search-resp.formblock {
+    display: block !important;
+  }
+
+  #arch-menu {
+    display: block !important;
+    position: fixed !important;
+    right: max(12px, env(safe-area-inset-right, 0px));
+    /* Float the pill just above the system home-bar / safe-area.
+       Reduced from the former 76 px (which left a huge dead gap below). */
+    bottom: max(16px, env(safe-area-inset-bottom, 0px));
+    left: max(12px, env(safe-area-inset-left, 0px));
+    /* DooPlay's drawer CSS may set width:280px, height:100%, top:0, left:-280px —
+       override everything so the container just wraps its pill content. */
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    top: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 100000;
+    pointer-events: none;
+    background: transparent !important;
+    /* Reset any drawer slide/fade animation that could hide or misplace the pill */
+    transform: none !important;
+    translate: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    overflow: visible !important;
+    transition: none !important;
+  }
+
+  #arch-menu .menu {
+    display: block !important;
+    /* Reset the position:absolute inherited from .menuresp .menu in front.style.min.css
+       so that width:100% and margin:0 auto centering work correctly inside the
+       fixed-positioned #arch-menu container.
+       padding:!important beats the base ".menuresp .menu { padding:0 }" rule. */
+    position: static !important;
+    /* Guarantee the .menu box expands to contain all its flex children.
+       DooPlay base CSS may set height:0 or overflow:hidden on .menuresp .menu
+       as part of the slide-in drawer — override both so the pill is fully
+       visible without needing the drawer's JS toggle. */
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 8px !important;
+    border-radius: 18px;
+    pointer-events: auto;
+    box-sizing: border-box;
+  }
+
+  #arch-menu .menu .menu-main-menu-container {
+    display: block !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  #arch-menu .menu ul.resp {
+    /* KEY FIX: DooPlay base CSS positions ul.resp as position:absolute inside
+       the drawer menu, which takes it out of normal flow so the parent .menu
+       never grows taller than its padding (~18px). That leaves the background
+       covering only 18px while the icons overflow above it without a bg.
+       Force static so ul.resp is in-flow and correctly expands .menu height. */
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    align-items: center !important;
+    justify-items: center !important;
+    gap: 6px !important;
+    width: 100%;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    overflow: visible !important;
+  }
+
+  #arch-menu .menu ul.resp > li {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    float: none !important;
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  #arch-menu .menu ul.resp > li > a {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 42px !important;
+    min-width: 42px !important;
+    min-height: 60px;
+    padding: 6px 4px !important;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none !important;
+    white-space: nowrap;
+    overflow: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  #arch-menu .menu ul.resp > li > a::before,
+  #arch-menu .menu ul.resp > li > a::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  #arch-menu .menu ul.resp > li > a .kisskh-menu-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+    margin: 0;
+    border-radius: 999px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  #arch-menu .menu ul.resp > li > a .kisskh-menu-icon .material-icons {
+    display: inline-block !important;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  #arch-menu .menu ul.resp > li > a > span:not(.kisskh-menu-icon) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  body {
+    /* pill top ≈ 84 px from screen bottom (16 px offset + 68 px height).
+       96 px = 84 + 12 px gap above pill — footer copyright stays fully
+       visible just above the pill with a comfortable breathing gap. */
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
+  #contenedor {
+    width: 100%;
+    /* .fixheadresp is now position:fixed (out of normal flow).
+       This margin-top exactly clears the 58 px sticky responsive header. */
+    margin: 58px auto 0;
+  }
+
+  body.home .module .content.full_width_layout {
+    padding-top: 0 !important;
+  }
+
+  body.home .module .content .hero-slider {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 1130px) {
+  header.responsive {
+    padding: 0 20px;
+  }
+
+  header.responsive .responsive-actions {
+    gap: 14px;
+  }
+
+  .fixheadresp header.responsive .responsive-actions .search a.search-resp,
+  .fixheadresp header.responsive .responsive-actions .user.responsive-user a.account-resp {
+    width: 36px !important;
+    min-width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+  }
+
+  #arch-menu {
+    right: auto !important;
+    /* Same near-bottom position as mobile — no need for the old 90 px offset. */
+    bottom: max(16px, calc(16px + env(safe-area-inset-bottom, 0px)));
+    left: 50% !important;
+    width: min(560px, calc(100vw - 72px)) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  #arch-menu .menu {
+    max-width: none;
+    padding: 9px 10px;
+    border-radius: 16px;
+  }
+
+  #arch-menu .menu ul.resp {
+    gap: 8px !important;
+  }
+
+  #arch-menu .menu ul.resp > li > a {
+    min-height: 64px;
+    gap: 5px;
+    padding: 7px 6px !important;
+    border-radius: 12px;
+  }
+
+  #arch-menu .menu ul.resp > li > a .kisskh-menu-icon {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+
+  #arch-menu .menu ul.resp > li > a .kisskh-menu-icon .material-icons {
+    font-size: 23px;
+  }
+
+  /* Tablets have room — show the text label below the icon so buttons
+     are self-explanatory without needing aria-label attr on <a>. */
+  #arch-menu .menu ul.resp > li > a .kisskh-menu-label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clip: auto;
+    clip-path: none;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  body {
+    /* pill top ≈ 94 px from screen bottom (16 px offset + 78 px pill).
+       110 px = 94 + 16 px gap above pill. */
+    padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #arch-menu {
+    left: 50% !important;
+    right: auto !important;
+    width: clamp(280px, calc(100vw - 160px), 520px) !important;
+    max-width: calc(100vw - 32px) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1130px) {
+  #arch-menu {
+    width: min(560px, calc(100vw - 96px)) !important;
+  }
+
+  #arch-menu .menu {
+    padding: 8px 10px;
+  }
+
+  #arch-menu .menu ul.resp li a {
+    min-height: 66px;
+    gap: 4px;
+    padding: 7px 6px 6px !important;
+  }
+
+  #arch-menu .menu ul.resp li a .kisskh-menu-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  #arch-menu .menu ul.resp li a .kisskh-menu-icon .material-icons {
+    font-size: 22px;
+  }
+
+  /* At this wider breakpoint the pill is large enough to show text clearly;
+     keep the label but shrink it slightly vs the general tablet rule. */
+  #arch-menu .menu ul.resp li a .kisskh-menu-label {
+    display: block;
+    font-size: 0.6rem;
+  }
+
+  /* Remove the broken aria-label fallback — wp_nav_menu does not add
+     aria-label to <a> elements, so attr(aria-label) always renders empty. */
+  #arch-menu .menu ul.resp li a::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  body {
+    /* Tablet: pill top ≈ 96 px (16 px offset + 80 px pill + label).
+       114 px = 96 + 18 px gap above pill. */
+    padding-bottom: calc(114px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.responsive {
+    min-height: 56px;
+    padding: 0 10px;
+  }
+
+  /* Header shrinks to 56 px here — keep content flush below it. */
+  #contenedor {
+    margin-top: 56px;
+  }
+
+  header.responsive a.aresp {
+    width: 38px;
+    height: 38px;
+  }
+
+  header.responsive .logo {
+    padding: 0 8px 0 0 !important;
+  }
+
+  header.responsive .logo img,
+  header.responsive .logo svg {
+    max-width: 104px;
+    max-height: 30px;
+  }
+
+  header.responsive .user.responsive-user {
+    margin-left: 0;
+  }
+
+  header.responsive .user.responsive-user .account-resp {
+    width: 46px;
+    height: 34px;
+  }
+
+  header.responsive .user.responsive-user .account-resp .material-icons {
+    font-size: 26px !important;
+  }
+
+  #arch-menu {
+    right: max(8px, env(safe-area-inset-right, 0px));
+    /* Small phones — keep the pill 12 px above the safe-area edge. */
+    bottom: max(12px, env(safe-area-inset-bottom, 0px));
+    left: max(8px, env(safe-area-inset-left, 0px));
+  }
+
+  body {
+    /* Small phones: pill top ≈ 76 px (12 px offset + 64 px pill height).
+       88 px = 76 + 12 px gap above pill. */
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  #arch-menu .menu {
+    padding: 7px;
+    border-radius: 16px;
+  }
+
+  #arch-menu .menu ul.resp {
+    gap: 3px;
+  }
+
+  #arch-menu .menu ul.resp li a {
+    min-height: 54px;
+    padding: 5px 3px !important;
+  }
+
+  #arch-menu .menu ul.resp li a .kisskh-menu-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  #arch-menu .menu ul.resp li a .kisskh-menu-icon .material-icons {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.kisskh-mobile-listing-page .module .content > #archive-content {
+    margin-bottom: 0;
+  }
+
+  body .module .content > #archive-content ~ .pagination,
+  body.kisskh-mobile-listing-page .pagination {
+    clear: both;
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    margin: 14px 0 0;
+    padding: 14px 0 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    float: left;
+  }
+
+  body .module .content > #archive-content ~ .pagination a,
+  body .module .content > #archive-content ~ .pagination span,
+  body.kisskh-mobile-listing-page .pagination a,
+  body.kisskh-mobile-listing-page .pagination span {
+    float: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 36px;
+    margin: 0;
+    padding: 0 13px;
+    border-radius: 4px;
+    line-height: 1;
+  }
+
+  body .module .content > #archive-content ~ .pagination > span:first-child,
+  body.kisskh-mobile-listing-page .pagination > span:first-child {
+    min-width: 0;
+    padding-right: 12px;
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  body .module .content > #archive-content ~ .pagination .current,
+  body.kisskh-mobile-listing-page .pagination .current {
+    background: #050505;
+    color: var(--kisskh-theme-accent, #408bea);
+  }
+
+  body .module .content > #archive-content ~ .resppages,
+  body.kisskh-mobile-listing-page .resppages {
+    display: none !important;
+  }
+
+  body:has(.module .content > #archive-content) footer.main,
+  body.kisskh-mobile-listing-page footer.main {
+    clear: both;
+    display: block !important;
+    margin-bottom: 0;
+    padding-bottom: 14px;
+  }
+
+  .home .module .content .hero-slider {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .home .module .content .hero-slider .owl-wrapper-outer {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .home .module .content .hero-slider .hero-slide__title {
+    left: 16px !important;
+    right: auto !important;
+    display: inline-flex !important;
+    width: auto !important;
+    max-width: calc(100vw - 32px) !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  body:has(.module .content > #archive-content) footer.main,
+  body.kisskh-mobile-listing-page footer.main {
+    padding-bottom: 14px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  body .module .content > #archive-content ~ .pagination,
+  body.kisskh-mobile-listing-page .pagination {
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  body .module .content > #archive-content ~ .pagination > span:first-child,
+  body.kisskh-mobile-listing-page .pagination > span:first-child {
+    flex: 0 0 100%;
+    min-height: 0;
+    padding: 0 0 2px;
+    border: 0;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.home .module > .content.full_width_layout > .hero-slider:first-child,
+  body.home .module > .content.full_width_layout > .dooplay-main-slier:first-child {
+    margin-top: -10px !important;
+  }
+}
