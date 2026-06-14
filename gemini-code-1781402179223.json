@@ -1,0 +1,12 @@
+{
+  "316294/1/1": [
+    { "name": "YouTube", "info": "Trailer Oficial", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    { "name": "Max", "info": "4K Ultra HD", "url": "https://player.vimeo.com/video/76979871" }
+  ],
+  "316294/1/2": [
+    { "name": "Netflix", "info": "Audio Latino", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+  ],
+  "pelicula-avatar": [
+    { "name": "vEdge", "info": "Subtitulado", "url": "https://player.vimeo.com/video/76979871" }
+  ]
+}
